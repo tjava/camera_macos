@@ -503,9 +503,9 @@ public class CameraMacosPlugin: NSObject, FlutterPlugin, FlutterTexture, AVCaptu
                                     connection.isVideoMirrored = true
                                 }
 //                                #if compiler(<5.8.1)
-                                    if #available(macOS 14.0, *), connection.isVideoRotationAngleSupported(self.orientation){
-                                        connection.videoRotationAngle = self.orientation
-                                    }
+                                    // if #available(macOS 14.0, *), connection.isVideoRotationAngleSupported(self.orientation){
+                                    //     connection.videoRotationAngle = self.orientation
+                                    // }
 //                                #endif
                             }
                             outputInitialized = true
@@ -522,9 +522,9 @@ public class CameraMacosPlugin: NSObject, FlutterPlugin, FlutterTexture, AVCaptu
                                     connection.isVideoMirrored = true
                                 }
 //                                #if compiler(<5.8.1)
-                                if #available(macOS 14.0, *),  connection.isVideoRotationAngleSupported(self.orientation){
-                                        connection.videoRotationAngle = self.orientation
-                                    }
+                                    // if #available(macOS 14.0, *),  connection.isVideoRotationAngleSupported(self.orientation){
+                                    //     connection.videoRotationAngle = self.orientation
+                                    // }
 //                                #endif
                             }
                             outputInitialized = true
